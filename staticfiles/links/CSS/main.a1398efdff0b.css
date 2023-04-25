@@ -1,0 +1,151 @@
+/*
+This CSS is for reference like div position, width, height and others
+*/
+
+* {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#categories-menu:hover,
+#categories-menu:focus,
+#categories-menu:active,
+#categories-menu:active:focus:not(:disabled):not(.disabled),
+#categories-menu:focus,
+#categories-menu:active,
+#categories-menu:hover {
+  box-shadow: none !important;
+  outline: 0;
+}
+
+#search-product {
+  border: 1px solid black;
+}
+
+#search-area {
+  border-right: none;
+  /* border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px; */
+  outline: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#seacrh-button {
+  color: white;
+  background-color: black;
+  border: none;
+  height: 100%;
+  outline: none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+#user-icon,
+#bell-icon,
+#favorite-icon {
+  color: black;
+  padding: 0px 25px;
+  font-size: 22px;
+}
+
+#bell-icon {
+  transform: rotate(-40deg);
+}
+
+#bell-icon .badge {
+  transform: rotate(40deg);
+}
+
+.navbarSupportedContent {
+  position: sticky;
+}
+
+.nav a {
+  color: black;
+}
+
+.carousel-item img {
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.carousel:hover {
+  cursor: pointer;
+}
+
+#main-content {
+  background-color: red;
+}
+
+.product-heart {
+  position: absolute;
+  color: black;
+  top: 15px;
+  right: 17px;
+  font-size: 22px;
+  visibility: hidden;
+}
+
+/*.product-heart:active
+{
+  background-color: red;
+}
+*/
+#item-card {
+  transition: 0.1s ease;
+  border-radius: 10px;
+}
+
+#item-card p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#item-card:hover {
+  cursor: pointer;
+  box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, .2);
+  transform: scale(1.02);
+}
+
+#item-card:hover i {
+  visibility: visible;
+}
+
+.show-more {
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  /*padding: 5px 10px;*/
+  transition: all 0.2s ease-out;
+}
+
+.show-more:hover {
+  background-color: rgb(60, 138, 255);
+  color: white;
+}
+
+#back-to-top {
+  text-decoration: none;
+}
+
+.footer-one h4,
+.footer-one a {
+  color: white;
+}
+
+.footer-one a {
+  text-decoration: none;
+}
+
+.share-btn:hover,
+.share-btn:focus,
+.share-btn:active,
+.share-btn:active:focus:not(:disabled):not(.disabled),
+.share-btn:focus,
+.share-btn:active,
+.share-btn:hover {
+  box-shadow: none !important;
+  outline: 0;
+  background-color: rgb(13, 110, 253);
+  color: white;
+}

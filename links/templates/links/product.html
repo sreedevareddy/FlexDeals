@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/CSS/main.css">
+
+    <style>
+        .small-img-group{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .small-img-col{
+            flex-basis: 24%;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light py-2 mt-2" id="top">
+        <div class="container-fluid">
+    
+            <!-- nav-bar button for responsive nav-bar -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- website -logo -->
+            <a href="#" class="navbar-brand me-5 my-0 p-0"><img src="/Resource/logo.jpg" alt=""></a>
+    
+            <!--website contents -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <form class="d-flex me-auto" action="" id="search-product">
+                        <input class="" id="search-area" type="text" placeholder="search" aria-label="search">
+                        <span><button class="btn" id="seacrh-button" type="button"><i
+                                    class="fas fa-search"></i></button></span>
+                    </form>
+                </ul>
+                <!-- Icons and others nav elements will be on right side-->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="bell-icon"><i class="far fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link" id="user-icon"><i class="far fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Links Tab-bar -->
+    <div class="d-flex justify-content-center my-2" id="secondary-tab">
+        <ul class="nav">
+            <li class="nav-item col-lg-2 col-md-4 col-12">
+                <a href="#" class="nav-link">Top Deals</a>
+            </li>
+            <li class="nav-item col-lg-2 col-md-4 col-12">
+                <a href="#" class="nav-link">Electronics</a>
+            </li>
+            <li class="nav-item col-lg-2 col-md-4 col-12">
+                <a href="#" class="nav-link">Appliances</a>
+            </li>
+            <li class="nav-item col-lg-2 col-md-4 col-12">
+                <a href="#" class="nav-link">Clothing</a>
+            </li>
+            <li class="nav-item col-lg-2 col-md-4 col-12">
+                <a href="#" class="nav-link">Beauty</a>
+            </li>
+            <li class="nav-item col-lg-2 col-md-4 col-12">
+                <a href="#" class="nav-link">Entertaintment</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Product image gallery + product title, price, sale-offer, review -->
+    <div class="container product-display pt-5">
+        <div class="row">
+
+            <!-- image gallary -->
+            <div class="col-lg-5 col-md-12 col-12">
+                <img class="img-fluid w-100 pb-1" src="/Resource/product-image.png" alt="">
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img class="small-img" src="/Resource/product-image.png" width="100%" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img class="small-img" src="/Resource/product-image.png" width="100%" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img class="small-img" src="/Resource/product-image.png" width="100%" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img class="small-img" src="/Resource/product-image.png" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- product details -->
+            <div class="col-lg-6 col-md-12 col-12 pt-4">
+                <h6>Home / Product Type</h6>
+                <h3>Product Title</h3>
+                <h2>$10.00</h2>
+                <div class="d-flex">
+                    <button class="btn mx-1 col-3 share-btn">SHARE</button>
+                    <button class="btn btn-primary col-6 mx-1">GET DEAL</button>
+                </div>
+                <br><br>
+                <h6>REVIEW</h6>
+                <!-- Add star here -->
+                <i class="fas fa-star" style="color: orange;"></i>
+                <i class="fas fa-star" style="color: orange;"></i>
+                <i class="fas fa-star" style="color: orange;"></i>
+                <i class="fas fa-star" style="color: orange;"></i>
+                <i class="fas fa-star" style="color: orange;"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Product Description -->
+    <div class="container mt-5">
+        <p>Lorem ipsum dolor, sit amet consectetur</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui adipisci illum fugit fuga, temporibus vitae beatae, officiis in, earum veritatis aspernatur corrupti. Provident architecto accusantium eveniet fuga sit libero quia eligendi autem itaque aliquid, eaque veritatis saepe accusamus perspiciatis est asperiores officiis molestias assumenda veniam voluptate fugit, rem similique corrupti? Doloremque, nulla, placeat culpa repudiandae laborum dolore officiis facere harum eius ullam obcaecati eum sit fuga inventore. Reprehenderit, recusandae eaque quibusdam nobis culpa vel corrupti! Cum atque hic ex corporis autem? Aliquid provident voluptatum sed a. Labore laboriosam quisquam adipisci similique ipsum nulla vero. Repudiandae consequatur rem ut voluptatem amet!</p>
+        <a target="_blanc" href="https://www.amazon.in/dp/B09L4MGP9T/?pf_rd_r=APPA6PFEYFG58KJRB2T0&pf_rd_p=30c260fe-53ad-46d1-8e4c-984f7dbe0ca7&pd_rd_r=f2a88b40-afd5-46c7-8ac8-1f7235a01960&pd_rd_w=C1lBX&pd_rd_wg=82pKP&ref_=pd_gw_unk&th=1" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; max-width: 40%;">https://www.amazon.in/dp/B09L4MGP9T/?pf_rd_r=APPA6PFEYFG58KJRB2T0&pf_rd_p=30c260fe-53ad-46d1-8e4c-984f7dbe0ca7&pd_rd_r=f2a88b40-afd5-46c7-8ac8-1f7235a01960&pd_rd_w=C1lBX&pd_rd_wg=82pKP&ref_=pd_gw_unk&th=1</a>
+        <div class="mt-4">
+            <button class="btn btn-primary">REPORT EXPIRED</button>
+        </div>
+    </div>
+
+
+    <!-- comments section-->
+    <div class="container mt-5 p-3">
+        <h3>10 Comments</h3>
+        <div class="d-flex">
+            <!--dummy profile image-->
+            <div>
+                <img class="img-fluid" src="" alt="">
+            </div>
+            <div>
+                <input class="form-control" type="text" placeholder="Leave a Comment" style="width: 500px;">
+            </div>
+        </div>
+    </div>
+   
+
+    <!-- Footer -->
+    <footer class="bg-dark py-5 mt-5">
+        <div class="container">
+            <div class="row">
+    
+                <!-- Follow us -->
+                <div class="footer-one col-lg-3 col-md-6 col-6">
+                    <h4>Follow Us</h4> <br>
+                    <ul class="list-unstyled">
+                        <li class="">
+                            <a href="#" target="_blank" rel=""><i class="fab fa-twitter pe-2 me-1"></i>Twitter</a>
+                        </li>
+                        <li class="">
+                            <a href="#" target="_blank" rel=""><i class="fab fa-instagram pe-2 me-1"></i>Instagram</a>
+                        </li>
+                        <li class="">
+                            <a href="#" target="_blank" rel=""><i class="fab fa-facebook pe-2 me-1"></i>Facebook</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- About -->
+                <div class="footer-one col-lg-3 col-md-6 col-6">
+                    <h4>About</h4>
+                    <ul class="list-unstyled">
+                        <li class="">
+                            <a href="#" target="_blank" rel="">About Us</a>
+                        </li>
+                        <li class="">
+                            <a href="#" target="_blank" rel="">Help Center</a>
+                        </li>
+                        <li class="">
+                            <a href="#" target="_blank" rel="">Careers</a>
+                        </li>
+                        <li class="">
+                            <a href="#" target="_blank" rel="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- More -->
+                <div class="footer-one col-lg-3 col-md-6 col-6">
+                    <h4>More</h4> <br>
+                    <ul class="list-unstyled">
+                        <li class="">
+                            <a href="#" target="_blank" rel="">Deal Alerts</a>
+                        </li>
+                        <li class="">
+                            <a href="#" target="_blank" rel="">Help Center</a>
+                        </li>
+                        <li class="">
+                            <a href="#" target="_blank" rel="">Advertising Opportunities</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Legal -->
+                <div class="footer-one col-lg-3 col-md-6 col-6">
+                    <h4>Legal</h4>
+                    <ul class="list-unstyled">
+                        <li class="">
+                            <a href="#" target="_blank" rel="">Privacy Policy</a>
+                        </li>
+                        <li class="">
+                            <a href="#" target="_blank" rel="">Other Terms and Policies</a>
+                        </li>
+                        <li class="">
+                            <a href="#" target="_blank" rel="">Interest-Based Ads</a>
+                        </li>
+                        <li class="">
+                            <a href="#" target="_blank" rel="">Website Accesibilities</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+</html>

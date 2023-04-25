@@ -1,0 +1,169 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+
+.product-card{
+	width:270px;
+	background: white;
+	margin:80px auto;
+	box-shadow: 1px 3px 10px rgba(0,0,0,0.2);
+}
+
+.product-image{
+	overflow: hidden;
+	position: relative;
+	height: 300px;
+	width:100%;
+}
+
+.front-image{
+	background: white;
+	width:100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 9;
+	height: 100%;
+	display: block;
+	transition: all 0.4s ease;
+}
+
+.front-image img{
+	height: 100%;
+	position: absolute;
+	top:0%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.product-front-image:hover .front-image{
+	display: none;
+}
+
+.product-image img{
+	height: 100%;
+	margin:auto!important;
+	width: auto!important
+}
+
+.product-like{
+	position: absolute;
+	display: inline-block;
+	top:12px;
+	z-index: 12;
+	right: 12px;
+	cursor: pointer;
+}
+
+.product-like svg{
+	fill: #000;
+	opacity: .2;
+	stroke: transparent;
+}
+
+.owl-slider{
+	overflow: hidden;
+}
+
+.product-front-image{
+	overflow: hidden;
+	position: relative;
+	height: 300px;
+	width: 100%;
+}
+
+.product-details{
+	padding: 10px 15px;
+	position: relative;
+}
+
+.brand-desc{
+	display: inline-block;
+	width:calc(100% - 80px);
+	font-size: 14px;
+	color:#212121;
+	font-weight: 400;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 0;
+}
+
+.brand-desc:hover{
+	color:#212121;
+	text-decoration: none;
+}
+
+.brand-name{
+	color:#878787;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.color-details{
+	color:#878787;
+	font-size: 12px;
+}
+
+.price-info-sec{
+	display: flex;
+}
+.price-info-sec div{
+	margin:0px 5px 0px 0px;
+}
+
+.price-info-sec .price{
+	font-size: 16px;
+	font-weight: 500;
+	color:#212121;
+}
+
+.price-info-sec .cut-off{
+	font-size: 15px;
+	font-weight: 400;
+	color:#878787;
+	text-decoration: line-through;
+}
+
+.price-info-sec .discount-percent span{
+	font-size: 13px;
+	font-weight: 600;
+	color:#388e3c;
+	letter-spacing: -.2px;
+	display: inline-block;
+}
+
+/*owl dots*/
+.product-slider .owl-dots{
+	position: absolute;
+	top:0;
+	width: 40px;
+	left:9px;
+	z-index: 99;
+}
+
+.product-slider .owl-dots .owl-dot span{
+	width:5px;
+	display: inline-block;
+	height: 5px;
+	margin: 0px 1px;
+	border-radius: 50%;
+	background: #e8e8e8;
+}
+
+.product-slider .owl-dots .owl-dot.active span{
+	background: gray;
+}
