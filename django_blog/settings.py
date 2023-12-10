@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-0=o9fgm4n6^9abv0za653=a@6j8rh3r78co-v_@-=i-(sp*+hj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://flexdeal.herokuapp.com/",'localhost','127.0.0.1']
+ALLOWED_HOSTS = ["https://flexdeal.herokuapp.com/",'localhost','127.0.0.1', '.vercel.app']
 
 
 # Application definition
