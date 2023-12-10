@@ -80,7 +80,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'vercel_app.wsgi.application'
+WSGI_APPLICATION = 'django_blog.wsgi.app'
 
 
 # Database
