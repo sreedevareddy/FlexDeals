@@ -8,7 +8,7 @@
       }
     },
     {
-      "src": "/czarny_kot/wsgi.py",
+      "src": "/django_blog/wsgi.py",
       "use": "@vercel/python",
       "config": { "maxLambdaSize": "15mb" }
     }
@@ -16,7 +16,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "czarny_kot/wsgi.py"
+      "dest": "django_blog/wsgi.py"
     },
     {
       "src": "/static/(.*)",
